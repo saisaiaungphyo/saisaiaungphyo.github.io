@@ -1,26 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
-    body {
-        background-color: #f0f2f5;
-        font-family: Arial, sans-serif;
-        text-align: center;
-        padding-top: 50px;
-    }
-    h1 {
-        color: #1877f2;
-    }
-    p {
-        color: #333333;
-        font-size: 18px;
-    }
-</style>
     <meta charset="UTF-8">
-    <title>Saisai Localhost Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sai Sai Aung Phyo - Portfolio</title>
+    <style>
+        /* 1. General Styles & Background */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* 2. Main Portfolio Container Card */
+        .portfolio-card {
+            background-color: #ffffff;
+            max-width: 600px;
+            width: 90%;
+            margin: 40px auto;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            border-top: 8px solid #007acc; /* Top Accent Bar */
+        }
+
+        /* 3. Profile Header Section */
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        header img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #007acc;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 15px 0 5px 0;
+            color: #1a1a1a;
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        header p {
+            margin: 0;
+            color: #007acc;
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* 4. Content Sections (About & Skills) */
+        section {
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            color: #1a1a1a;
+            font-size: 20px;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 8px;
+            margin-bottom: 12px;
+        }
+
+        p {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #555;
+            text-align: justify;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        ul li {
+            font-size: 15px;
+            color: #555;
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+
+        /* 5. Social Links / Footer Section */
+        footer {
+            text-align: center;
+            margin-top: 35px;
+            padding-top: 20px;
+            border-top: 1px solid #eeeeee;
+        }
+
+        footer h2 {
+            border: none;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 14px;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-facebook {
+            background-color: #1877f2;
+            color: white;
+        }
+
+        .btn-facebook:hover {
+            background-color: #145dbf;
+            transform: translateY(-2px);
+        }
+
+        .btn-github {
+            background-color: #24292e;
+            color: white;
+        }
+
+        .btn-github:hover {
+            background-color: #040506;
+            transform: translateY(-2px);
+        }
+    </style>
 </head>
 <body>
-    <h1>မင်္ဂလာပါ ဗျာ။</h1>
-    <p>ဒါကတော့ Windows 11 ရဲ့ Localhost ပေါ်မှာ ပထမဆုံး မောင်းနှင်မယ့် ကျွန်တော့်ရဲ့ ဝက်ဘ်ဆိုက် ဖြစ်ပါတယ်။</p>
+
+    <div class="portfolio-card">
+        <!-- Profile Header -->
+        <header>
+            <!-- Temporary Avatar Placeholder -->
+            <img src="https://dicebear.com" alt="Sai Sai Aung Phyo">
+            <h1>Sai Sai Aung Phyo</h1>
+            <p>Web Developer & Cyber Security Enthusiast</p>
+        </header>
+
+        <!-- About Me Section -->
+        <section>
+            <h2>About Me</h2>
+            <p>Hello! I am Sai Sai Aung Phyo. I am a passionate learner focusing on modern Web Design and Cyber Security. I enjoy creating visually appealing web applications and exploring network security infrastructures across Windows 11 and Linux environments.</p>
+        </section>
+
+        <!-- Skills Section -->
+        <section>
+            <h2>Technical Skills</h2>
+            <ul>
+                <li>Responsive Web Design (HTML5 & CSS3)</li>
+                <li>Database Architecture & Management (MySQL)</li>
+                <li>Linux OS Navigation & Command Line Operations</li>
+            </ul>
+        </section>
+
+        <!-- Social Connections Section -->
+        <footer>
+            <h2>Connect With Me</h2>
+            <div class="social-links">
+                <!-- Replace '#' with your real social media links later -->
+                <a href="https://facebook.com" target="_blank" class="btn btn-facebook">🌐 Facebook</a>
+                <a href="https://github.com" target="_blank" class="btn btn-github">🐙 GitHub</a>
+            </div>
+        </footer>
+    </div>
+
 </body>
 </html>
